@@ -5,7 +5,7 @@ import { faBook, faHome, faSearch } from "@fortawesome/free-solid-svg-icons";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-     <Link className="sidebar__logo"><FontAwesomeIcon icon={faBook}></FontAwesomeIcon></Link>
+     <Link ><FontAwesomeIcon className="sidebar__logo" icon={faBook}></FontAwesomeIcon></Link>
      <nav>
      <NavLink
           exact="true"
@@ -18,6 +18,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           to="/books"
+          className="books-link"
         >
           <FontAwesomeIcon icon={faBook} color="#CD8A39"></FontAwesomeIcon>
         </NavLink>
@@ -25,6 +26,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           to="/search"
+          className="search-link"
         >
           <FontAwesomeIcon icon={faSearch} color="#CD8A39"></FontAwesomeIcon>
         </NavLink>

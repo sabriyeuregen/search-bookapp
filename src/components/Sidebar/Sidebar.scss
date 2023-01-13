@@ -1,29 +1,89 @@
 .sidebar {
-    background-color: #060D08;
-    width: 60px ;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
-      
-      nav{
-        display: block;
-        text-align: center;
-        position: absolute;
-        height: 210px;
-        top: 50%;
-        margin-top: -120px;
-        width: 100%;
+  background-color: #060d08;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
 
-        a{
-           font-size: 22px ;
-            color: #CD8A39;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
+  &__logo {
+    display: block;
+    margin: 8px auto;
+    width: 24px;
+    height: auto;
+    color: #595d2b;
+  }
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #cd8a39;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #595d2b;
+      
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
         }
       }
-}
+
+        &:after {
+          content: "";
+          font-size: 12px;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          transition: all 0.3s ease-out;
+        }
+      
+      
+      &:first-child {
+        &:after {
+          content: "Anasayfa";
+        }
+      }
+    }
+
+    a.books-link {
+      &:after {
+        content: "Kitaplar";
+      }
+    }
+    a.search-link {
+     &:after {
+      content: "Kitap Ara";
+     }
+    }
+    a.active {
+      svg {
+        color: #595d2b;
+      }
+    }
+  }
+  }
+

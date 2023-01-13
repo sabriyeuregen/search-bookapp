@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import "./Layout.scss";
 const Layout = () => {
   return (
-    <div className="App">
+       <div className="App" >
         <Sidebar/>
        <div className="page">
        <Outlet/>

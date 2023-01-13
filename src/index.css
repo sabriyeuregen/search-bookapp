@@ -1,6 +1,11 @@
 body {
   margin: 0;
-
+  background-color: #595D2B;
+  overflow: hidden;
+  display: block;
 }
 
-
+.dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+}
