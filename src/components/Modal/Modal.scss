@@ -1,0 +1,23 @@
+.overlay {
+    &__inner {
+
+    background-color: white;
+    width: 700px;
+    height: 550px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1.3rem;
+
+        .button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            outline: none;
+            border: none;
+            font-size: 17px;
+            background-color: transparent;
+        }
+    }
+}

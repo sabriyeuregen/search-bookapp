@@ -1,0 +1,18 @@
+.searchcard {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 1%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+
+    &__img {
+        max-width: 100%;
+        z-index: 1;
+        position: relative;
+    }
+}
