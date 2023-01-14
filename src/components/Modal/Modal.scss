@@ -29,10 +29,12 @@
             top: 1rem;
             right: 1rem;
             outline: none;
-            border: none;
             font-size: 17px;
             background-color: transparent;
             cursor: pointer;
+            border-style: solid;
+            border-color: gray;
+            text-align: center;
         }
 
         .inner-box {
@@ -45,10 +47,23 @@
              width: 150px;  
              height: 200px; 
             }
+
+            .info {
+                text-align: center;
+
+                a {
+                    button {
+                        background-color: white;
+                        border-style: solid;
+                        border-color: black;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
         
         .description {
-            margin-top: 2rem;
             text-align: justify;
             font-size: 13px;
         }
