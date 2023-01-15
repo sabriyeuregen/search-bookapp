@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { DataGrid } from "@mui/x-data-grid";
+import "./BookDataGrid.scss";
 const BookDataGrid = () => {
   const [data, setData] = useState([]);
 
@@ -26,11 +27,10 @@ const BookDataGrid = () => {
     }
   ];
 
-
- // console.log(data[0].volumeInfo.categories[0])
   return (
-    <div style={{height: 500, width:"80%", float:"right"}}>
+    <div className="data-grid">
       <DataGrid
+      style={{ height: 500,width: 500,background:"white"}}
         rows={data}
         columns={columns}
         pageSize={10}

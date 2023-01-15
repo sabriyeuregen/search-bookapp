@@ -9,6 +9,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Books from "./pages/Books/Books";
 import SearchBook from "./pages/SearchBook/SearchBook";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>

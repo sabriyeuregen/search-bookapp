@@ -10,13 +10,32 @@
   }
 
   .home-img {
+    max-width: 650px;
+    height: auto;
     position: relative;
     opacity: 1;
     z-index: 1;
     float: right;
-    width: 580px;
     border-radius: 8px;
-    margin-right: 5px;
-    margin-top: 20px;
+    
   }
+}
+@media screen and (max-width: 1200px) {
+
+  .home-page {
+   display: flex;
+
+   h1 {
+    position: absolute;
+    top: 10px;
+   }
+
+    .home-img {
+      max-width: 500px;
+      height: auto;
+      margin-top: 22%;
+    }
+  }
+  
+
 }

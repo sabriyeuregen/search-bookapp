@@ -1,8 +1,8 @@
 import BookDataGrid from "../../components/BookDataGrid/BookDataGrid";
-
+import "./Books.scss";
 const Books = () => {
   return (
-    <div>
+    <div className="container book-page">
       <BookDataGrid />
     </div>
   );
