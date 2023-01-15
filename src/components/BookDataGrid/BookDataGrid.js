@@ -52,7 +52,7 @@ const BookDataGrid = () => {
         placeholder="Bir kitap ismi giriniz"
       ></input>
       <DataGrid
-        style={{ height: 500, width: 600, background: "white" }}
+        style={{ height: 500, width: 600, background: "#dbceb0" }}
         rows={data}
         columns={columns}
         pageSize={10}
