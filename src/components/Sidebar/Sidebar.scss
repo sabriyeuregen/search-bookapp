@@ -115,6 +115,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          width: 80%;
         }
   
         a:after {
@@ -138,6 +139,7 @@
         top: 15px;
         right: 15px;
         z-index: 1;
+        cursor: pointer;
       }
 
     }

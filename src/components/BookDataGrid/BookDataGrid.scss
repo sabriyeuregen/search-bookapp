@@ -1,8 +1,26 @@
 .data-grid {
-   position: absolute;
-   margin-left: 20%;
-   margin-top: 5%;
-   height: 500;
-   width: 40%;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 5%;
+  height: 500;
+  width: 40%;
 
+  .input {
+    margin-left: 20%;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    background-color: #cd8a39;
+    color: #060d08;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .data-grid {
+    position: initial;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-left: 0;
+  }
 }

@@ -19,10 +19,16 @@ const Sidebar = () => {
         <FontAwesomeIcon className="sidebar__logo" icon={faBookOpen} />
       </Link>
       <nav className={showNav ? "mobile-show" : ""}>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          to="/"
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faHome} color="#CD8A39"></FontAwesomeIcon>
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           to="/books"
@@ -31,6 +37,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faBook} color="#CD8A39"></FontAwesomeIcon>
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           to="/search"

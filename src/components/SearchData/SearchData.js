@@ -10,7 +10,7 @@ const SearchData = () => {
     useEffect(()=>{
         const fetchData = async () => {
          const res = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}
-         "&key=AIzaSyDS3A3o4kNsFQ6QupjTALHmrHx1qkd7I6M`+"&maxResults=10");
+         &key=AIzaSyDS3A3o4kNsFQ6QupjTALHmrHx1qkd7I6M`+"&maxResults=10");
          setData(res.data.items);
         };
         if( search.length > 2) fetchData();
