@@ -9,7 +9,7 @@
  
 Book search uygulamasında googleapi.com dan axios ile aldığım books apisini kullandım.Projemin books sayfasında search componentinde girilen inputa göre datayı filtreleyerek mui-datagrid ile tablo şeklinde her sayfada 10 kitap olacak şekilde 2 sayfada gösterdim.
 
-![Search](src/assets/book-search.png)
+![Search](src/assets/book-search-mui.png)
 
 Search sayfasında ise girilen input sonucunda filtereleme yaparak kitap görsellerini ve üzerinde tıklanınca ilgili görseli ve detay sayfasını ekledim.
 
